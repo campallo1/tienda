@@ -1,0 +1,168 @@
+/* Estilos generales */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #494343;
+}
+
+.barra-navegacion {
+  background-color: #4d4c4c;
+  padding: 10px;
+}
+
+.navegacion-derecha {
+  text-align: right;
+  display: flex;
+  align-items: center; /* Alinea verticalmente los elementos */
+  justify-content: flex-end; /* Alinea horizontalmente los elementos */
+}
+
+.enlaces-principales {
+  display: flex;
+  align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.enlaces-principales .enlace-navegacion {
+  color: #f2f5f8;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.email-extension {
+  position: relative;
+  display: flex;
+  align-items: center; /* Alinea verticalmente los elementos */
+  margin-left: 10px;
+}
+
+.email-extension p {
+  margin: 0;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #060606;
+  border-radius: 5px;
+  white-space: nowrap; /* Evita el salto de línea en el menú desplegable */
+}
+
+.dropdown-content a {
+  display: block;
+  margin-bottom: 4px;
+  color: #333;
+  text-decoration: none;
+}
+
+.email-extension:hover .dropdown-content {
+  display: block;
+}
+
+/* Estilos específicos */
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 90%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.producto {
+  width: 15%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.producto h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.producto p {
+  margin: 0;
+  color: #666;
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.error-message {
+  color: #ff0000;
+  margin-bottom: 10px;
+}
+
+.success-message {
+  color: #008000;
+  margin-bottom: 10px;
+}

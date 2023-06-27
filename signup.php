@@ -53,6 +53,7 @@
         // Obtener los datos del formulario
         $email = $_POST['email'];
         $password = $_POST['password'];
+        $username = $_POST['username'];
 
         // Conexión a la base de datos
         $conexion = mysqli_connect('localhost', 'root', '', 'tienda');
@@ -65,6 +66,7 @@
         // Preparar los datos para la consulta
         $email = mysqli_real_escape_string($conexion, $email);
         $password = mysqli_real_escape_string($conexion, $password);
+        $username = mysqli_real_escape_string($conexion, $username);
 
         // Verificar si el correo electrónico termina en "@tienda.com"
         if (substr($email, -11) === "@tienda.com") {
@@ -77,7 +79,7 @@
         }
 
         // Consulta SQL para insertar el usuario en la base de datos
-        $query = "INSERT INTO usuarios (email, password, rol) VALUES ('$email', '$password', '$rol')";
+        $query = "INSERT INTO usuarios (username, email, password, rol) VALUES ('$username', '$email', '$password', '$rol')";
 
         // Ejecutar la consulta
         if (mysqli_query($conexion, $query)) {
@@ -91,6 +93,9 @@
     }
     ?>
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required><br><br>
+
         <label for="email">Correo electrónico:</label>
         <input type="email" name="email" id="email" required><br><br>
 

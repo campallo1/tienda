@@ -114,7 +114,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo '<a class="enlace-navegacion" href="tienda.php">Tienda</a>';
         echo '<a class="enlace-navegacion carrito" href="carrito.php">Carrito</a>';
         echo '</div>'; // Cierra el div de los enlaces principales
-
         echo '<div class="email-extension">';
         echo '<p>' . $_SESSION['user'] . '</p>'; // Mostrar el correo electrónico
         echo '<div class="dropdown-content">';
@@ -128,7 +127,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo '<a class="enlace-navegacion" href="guardar_producto.php">Agregar</a>';
         echo '<a class="enlace-navegacion" href="eliminar_producto.php">Eliminar</a>';
         echo '</div>'; // Cierra el div de los enlaces principales
-
         echo '<div class="email-extension">';
         echo '<p>' . $_SESSION['user'] . '</p>'; // Mostrar el correo electrónico
         echo '<div class="dropdown-content">';
